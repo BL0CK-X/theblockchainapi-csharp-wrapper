@@ -42,6 +42,7 @@ docs/GetNFTListingResponse.md
 docs/GetPublicKeyRequest.md
 docs/GetSPLTokenResponse.md
 docs/Group.md
+docs/InlineObject.md
 docs/ListNFTsResponse.md
 docs/ListRequest.md
 docs/ListResponse.md
@@ -86,16 +87,6 @@ docs/UploadFileRequest.md
 docs/Wallet.md
 git_push.sh
 mono_nunit_test.sh
-src/Org.OpenAPITools.Test/Api/EndpointApiTests.cs
-src/Org.OpenAPITools.Test/Api/ProjectApiTests.cs
-src/Org.OpenAPITools.Test/Model/EndpointReferenceTests.cs
-src/Org.OpenAPITools.Test/Model/EndpointTests.cs
-src/Org.OpenAPITools.Test/Model/GroupTests.cs
-src/Org.OpenAPITools.Test/Model/ParameterSpecificationTests.cs
-src/Org.OpenAPITools.Test/Model/ProjectCreateRequestTests.cs
-src/Org.OpenAPITools.Test/Model/ProjectDeploymentURLTests.cs
-src/Org.OpenAPITools.Test/Model/ProjectTests.cs
-src/Org.OpenAPITools.Test/Model/StatItemTests.cs
 src/Org.OpenAPITools.Test/Org.OpenAPITools.Test.csproj
 src/Org.OpenAPITools.Test/packages.config
 src/Org.OpenAPITools/Api/EndpointApi.cs
@@ -153,6 +144,7 @@ src/Org.OpenAPITools/Model/GetNFTListingResponse.cs
 src/Org.OpenAPITools/Model/GetPublicKeyRequest.cs
 src/Org.OpenAPITools/Model/GetSPLTokenResponse.cs
 src/Org.OpenAPITools/Model/Group.cs
+src/Org.OpenAPITools/Model/InlineObject.cs
 src/Org.OpenAPITools/Model/ListNFTsResponse.cs
 src/Org.OpenAPITools/Model/ListRequest.cs
 src/Org.OpenAPITools/Model/ListResponse.cs

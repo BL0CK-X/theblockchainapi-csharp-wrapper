@@ -315,6 +315,7 @@ Class | Method | HTTP request | Description
  - [Model.GetPublicKeyRequest](docs/GetPublicKeyRequest.md)
  - [Model.GetSPLTokenResponse](docs/GetSPLTokenResponse.md)
  - [Model.Group](docs/Group.md)
+ - [Model.InlineObject](docs/InlineObject.md)
  - [Model.ListNFTsResponse](docs/ListNFTsResponse.md)
  - [Model.ListRequest](docs/ListRequest.md)
  - [Model.ListResponse](docs/ListResponse.md)

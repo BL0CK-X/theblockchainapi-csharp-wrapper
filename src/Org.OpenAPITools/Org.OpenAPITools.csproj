@@ -12,7 +12,7 @@ Contact: info@blockchainapi.com
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3396BF59-D8F0-485A-899D-BC47F8A06748}</ProjectGuid>
+    <ProjectGuid>{F5B9441A-463E-42DC-A257-0C811DB75F05}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Org.OpenAPITools</RootNamespace>

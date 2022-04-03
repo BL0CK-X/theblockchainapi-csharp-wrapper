@@ -53,10 +53,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>Project</returns>
-        Project CreateProjectVersion ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2);
+        Project CreateProjectVersion (string projectId, string version);
 
         /// <summary>
         /// Create a new project version 
@@ -65,10 +65,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>ApiResponse of Project</returns>
-        ApiResponse<Project> CreateProjectVersionWithHttpInfo ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2);
+        ApiResponse<Project> CreateProjectVersionWithHttpInfo (string projectId, string version);
         /// <summary>
         /// Delete a project 
         /// </summary>
@@ -76,9 +76,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns></returns>
-        void DeleteProject ( UNKNOWN_PARAMETER_NAME);
+        void DeleteProject (string projectId);
 
         /// <summary>
         /// Delete a project 
@@ -87,9 +87,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteProjectWithHttpInfo ( UNKNOWN_PARAMETER_NAME);
+        ApiResponse<Object> DeleteProjectWithHttpInfo (string projectId);
         /// <summary>
         /// Delete a project version 
         /// </summary>
@@ -97,10 +97,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>Project</returns>
-        Project DeleteProjectVersion ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2);
+        Project DeleteProjectVersion (string projectId, string version);
 
         /// <summary>
         /// Delete a project version 
@@ -109,10 +109,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>ApiResponse of Project</returns>
-        ApiResponse<Project> DeleteProjectVersionWithHttpInfo ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2);
+        ApiResponse<Project> DeleteProjectVersionWithHttpInfo (string projectId, string version);
         /// <summary>
         /// Get a project&#39;s metadata 
         /// </summary>
@@ -120,9 +120,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>Project</returns>
-        Project GetProject ( UNKNOWN_PARAMETER_NAME);
+        Project GetProject (string projectId);
 
         /// <summary>
         /// Get a project&#39;s metadata 
@@ -131,9 +131,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of Project</returns>
-        ApiResponse<Project> GetProjectWithHttpInfo ( UNKNOWN_PARAMETER_NAME);
+        ApiResponse<Project> GetProjectWithHttpInfo (string projectId);
         /// <summary>
         /// Get deployment status 
         /// </summary>
@@ -141,9 +141,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>Object</returns>
-        Object GetProjectDeploymentStatus ( UNKNOWN_PARAMETER_NAME);
+        Object GetProjectDeploymentStatus (string projectId);
 
         /// <summary>
         /// Get deployment status 
@@ -152,9 +152,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> GetProjectDeploymentStatusWithHttpInfo ( UNKNOWN_PARAMETER_NAME);
+        ApiResponse<Object> GetProjectDeploymentStatusWithHttpInfo (string projectId);
         /// <summary>
         /// Get the deployment URL 
         /// </summary>
@@ -162,10 +162,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <returns>ProjectDeploymentURL</returns>
-        ProjectDeploymentURL GetProjectDeploymentURL ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE));
+        ProjectDeploymentURL GetProjectDeploymentURL (string projectId, InlineObject inlineObject = default(InlineObject));
 
         /// <summary>
         /// Get the deployment URL 
@@ -174,10 +174,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <returns>ApiResponse of ProjectDeploymentURL</returns>
-        ApiResponse<ProjectDeploymentURL> GetProjectDeploymentURLWithHttpInfo ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE));
+        ApiResponse<ProjectDeploymentURL> GetProjectDeploymentURLWithHttpInfo (string projectId, InlineObject inlineObject = default(InlineObject));
         /// <summary>
         /// Get a project&#39;s stats 
         /// </summary>
@@ -185,9 +185,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>List&lt;StatItem&gt;</returns>
-        List<StatItem> GetProjectStats ( UNKNOWN_PARAMETER_NAME);
+        List<StatItem> GetProjectStats (string projectId);
 
         /// <summary>
         /// Get a project&#39;s stats 
@@ -196,9 +196,9 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of List&lt;StatItem&gt;</returns>
-        ApiResponse<List<StatItem>> GetProjectStatsWithHttpInfo ( UNKNOWN_PARAMETER_NAME);
+        ApiResponse<List<StatItem>> GetProjectStatsWithHttpInfo (string projectId);
         /// <summary>
         /// List projects 
         /// </summary>
@@ -225,10 +225,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <returns>Project</returns>
-        Project UpdateProject ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest));
+        Project UpdateProject (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest));
 
         /// <summary>
         /// Update a project 
@@ -237,10 +237,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <returns>ApiResponse of Project</returns>
-        ApiResponse<Project> UpdateProjectWithHttpInfo ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest));
+        ApiResponse<Project> UpdateProjectWithHttpInfo (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest));
         /// <summary>
         /// Update the project&#39;s documentation 
         /// </summary>
@@ -248,10 +248,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>Project</returns>
-        Project UpdateProjectDocumentation ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2);
+        Project UpdateProjectDocumentation (string projectId, string version);
 
         /// <summary>
         /// Update the project&#39;s documentation 
@@ -260,10 +260,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>ApiResponse of Project</returns>
-        ApiResponse<Project> UpdateProjectDocumentationWithHttpInfo ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2);
+        ApiResponse<Project> UpdateProjectDocumentationWithHttpInfo (string projectId, string version);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -296,11 +296,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        System.Threading.Tasks.Task<Project> CreateProjectVersionAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Project> CreateProjectVersionAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Create a new project version 
@@ -309,11 +309,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Project>> CreateProjectVersionWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Project>> CreateProjectVersionWithHttpInfoAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a project 
         /// </summary>
@@ -321,10 +321,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteProjectAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteProjectAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a project 
@@ -333,10 +333,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProjectWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProjectWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a project version 
         /// </summary>
@@ -344,11 +344,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        System.Threading.Tasks.Task<Project> DeleteProjectVersionAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Project> DeleteProjectVersionAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a project version 
@@ -357,11 +357,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Project>> DeleteProjectVersionWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Project>> DeleteProjectVersionWithHttpInfoAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get a project&#39;s metadata 
         /// </summary>
@@ -369,10 +369,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        System.Threading.Tasks.Task<Project> GetProjectAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Project> GetProjectAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get a project&#39;s metadata 
@@ -381,10 +381,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Project>> GetProjectWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Project>> GetProjectWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get deployment status 
         /// </summary>
@@ -392,10 +392,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> GetProjectDeploymentStatusAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> GetProjectDeploymentStatusAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get deployment status 
@@ -404,10 +404,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetProjectDeploymentStatusWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> GetProjectDeploymentStatusWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get the deployment URL 
         /// </summary>
@@ -415,11 +415,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ProjectDeploymentURL</returns>
-        System.Threading.Tasks.Task<ProjectDeploymentURL> GetProjectDeploymentURLAsync ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ProjectDeploymentURL> GetProjectDeploymentURLAsync (string projectId, InlineObject inlineObject = default(InlineObject), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get the deployment URL 
@@ -428,11 +428,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ProjectDeploymentURL)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ProjectDeploymentURL>> GetProjectDeploymentURLWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ProjectDeploymentURL>> GetProjectDeploymentURLWithHttpInfoAsync (string projectId, InlineObject inlineObject = default(InlineObject), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get a project&#39;s stats 
         /// </summary>
@@ -440,10 +440,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of List&lt;StatItem&gt;</returns>
-        System.Threading.Tasks.Task<List<StatItem>> GetProjectStatsAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<List<StatItem>> GetProjectStatsAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get a project&#39;s stats 
@@ -452,10 +452,10 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (List&lt;StatItem&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<StatItem>>> GetProjectStatsWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<List<StatItem>>> GetProjectStatsWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List projects 
         /// </summary>
@@ -484,11 +484,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        System.Threading.Tasks.Task<Project> UpdateProjectAsync ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Project> UpdateProjectAsync (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a project 
@@ -497,11 +497,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectWithHttpInfoAsync (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update the project&#39;s documentation 
         /// </summary>
@@ -509,11 +509,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        System.Threading.Tasks.Task<Project> UpdateProjectDocumentationAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Project> UpdateProjectDocumentationAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update the project&#39;s documentation 
@@ -522,11 +522,11 @@ namespace Org.OpenAPITools.Api
         /// A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectDocumentationWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectDocumentationWithHttpInfoAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -807,12 +807,12 @@ namespace Org.OpenAPITools.Api
         /// Create a new project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>Project</returns>
-        public Project CreateProjectVersion ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+        public Project CreateProjectVersion (string projectId, string version)
         {
-             ApiResponse<Project> localVarResponse = CreateProjectVersionWithHttpInfo(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2);
+             ApiResponse<Project> localVarResponse = CreateProjectVersionWithHttpInfo(projectId, version);
              return localVarResponse.Data;
         }
 
@@ -820,17 +820,17 @@ namespace Org.OpenAPITools.Api
         /// Create a new project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>ApiResponse of Project</returns>
-        public ApiResponse<Project> CreateProjectVersionWithHttpInfo ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+        public ApiResponse<Project> CreateProjectVersionWithHttpInfo (string projectId, string version)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->CreateProjectVersion");
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME2' is set
-            if (UNKNOWN_PARAMETER_NAME2 == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME2' when calling ProjectApi->CreateProjectVersion");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->CreateProjectVersion");
+            // verify the required parameter 'version' is set
+            if (version == null)
+                throw new ApiException(400, "Missing required parameter 'version' when calling ProjectApi->CreateProjectVersion");
 
             var localVarPath = "/project/{project_id}/{version}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -853,8 +853,8 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_PARAMETER_NAME2 != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME2)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (version != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(version)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -889,13 +889,13 @@ namespace Org.OpenAPITools.Api
         /// Create a new project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        public async System.Threading.Tasks.Task<Project> CreateProjectVersionAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Project> CreateProjectVersionAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Project> localVarResponse = await CreateProjectVersionWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2, cancellationToken);
+             ApiResponse<Project> localVarResponse = await CreateProjectVersionWithHttpInfoAsync(projectId, version, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -904,18 +904,18 @@ namespace Org.OpenAPITools.Api
         /// Create a new project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Create a new version for the project. The version must be higher than all existing versions. This will duplicate the existing project&#39;s latest version and auto-deploy it. To update these endpoints, simply redeploy on this project&#39;s versions.  When a project is first created, it uses the default \&quot;0.0.1\&quot; version.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Project>> CreateProjectVersionWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Project>> CreateProjectVersionWithHttpInfoAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->CreateProjectVersion");
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME2' is set
-            if (UNKNOWN_PARAMETER_NAME2 == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME2' when calling ProjectApi->CreateProjectVersion");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->CreateProjectVersion");
+            // verify the required parameter 'version' is set
+            if (version == null)
+                throw new ApiException(400, "Missing required parameter 'version' when calling ProjectApi->CreateProjectVersion");
 
             var localVarPath = "/project/{project_id}/{version}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -938,8 +938,8 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_PARAMETER_NAME2 != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME2)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (version != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(version)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -974,24 +974,24 @@ namespace Org.OpenAPITools.Api
         /// Delete a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns></returns>
-        public void DeleteProject ( UNKNOWN_PARAMETER_NAME)
+        public void DeleteProject (string projectId)
         {
-             DeleteProjectWithHttpInfo(UNKNOWN_PARAMETER_NAME);
+             DeleteProjectWithHttpInfo(projectId);
         }
 
         /// <summary>
         /// Delete a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteProjectWithHttpInfo ( UNKNOWN_PARAMETER_NAME)
+        public ApiResponse<Object> DeleteProjectWithHttpInfo (string projectId)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->DeleteProject");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->DeleteProject");
 
             var localVarPath = "/project/{project_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1013,7 +1013,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1048,12 +1048,12 @@ namespace Org.OpenAPITools.Api
         /// Delete a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteProjectAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteProjectAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteProjectWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, cancellationToken);
+             await DeleteProjectWithHttpInfoAsync(projectId, cancellationToken);
 
         }
 
@@ -1061,14 +1061,14 @@ namespace Org.OpenAPITools.Api
         /// Delete a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Deletes a project. This will remove the mini-API entirely from our system.   &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProjectWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProjectWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->DeleteProject");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->DeleteProject");
 
             var localVarPath = "/project/{project_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1090,7 +1090,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1125,12 +1125,12 @@ namespace Org.OpenAPITools.Api
         /// Delete a project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>Project</returns>
-        public Project DeleteProjectVersion ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+        public Project DeleteProjectVersion (string projectId, string version)
         {
-             ApiResponse<Project> localVarResponse = DeleteProjectVersionWithHttpInfo(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2);
+             ApiResponse<Project> localVarResponse = DeleteProjectVersionWithHttpInfo(projectId, version);
              return localVarResponse.Data;
         }
 
@@ -1138,17 +1138,17 @@ namespace Org.OpenAPITools.Api
         /// Delete a project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>ApiResponse of Project</returns>
-        public ApiResponse<Project> DeleteProjectVersionWithHttpInfo ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+        public ApiResponse<Project> DeleteProjectVersionWithHttpInfo (string projectId, string version)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->DeleteProjectVersion");
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME2' is set
-            if (UNKNOWN_PARAMETER_NAME2 == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME2' when calling ProjectApi->DeleteProjectVersion");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->DeleteProjectVersion");
+            // verify the required parameter 'version' is set
+            if (version == null)
+                throw new ApiException(400, "Missing required parameter 'version' when calling ProjectApi->DeleteProjectVersion");
 
             var localVarPath = "/project/{project_id}/{version}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1171,8 +1171,8 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_PARAMETER_NAME2 != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME2)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (version != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(version)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1207,13 +1207,13 @@ namespace Org.OpenAPITools.Api
         /// Delete a project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        public async System.Threading.Tasks.Task<Project> DeleteProjectVersionAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Project> DeleteProjectVersionAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Project> localVarResponse = await DeleteProjectVersionWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2, cancellationToken);
+             ApiResponse<Project> localVarResponse = await DeleteProjectVersionWithHttpInfoAsync(projectId, version, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1222,18 +1222,18 @@ namespace Org.OpenAPITools.Api
         /// Delete a project version  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Delete a version for the project. There must always be at least one version deployed, so you cannot delete the last remaining version of the project. This will auto-deploy the project and update its documentation, if necessary.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Project>> DeleteProjectVersionWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Project>> DeleteProjectVersionWithHttpInfoAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->DeleteProjectVersion");
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME2' is set
-            if (UNKNOWN_PARAMETER_NAME2 == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME2' when calling ProjectApi->DeleteProjectVersion");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->DeleteProjectVersion");
+            // verify the required parameter 'version' is set
+            if (version == null)
+                throw new ApiException(400, "Missing required parameter 'version' when calling ProjectApi->DeleteProjectVersion");
 
             var localVarPath = "/project/{project_id}/{version}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1256,8 +1256,8 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_PARAMETER_NAME2 != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME2)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (version != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(version)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1292,11 +1292,11 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s metadata  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>Project</returns>
-        public Project GetProject ( UNKNOWN_PARAMETER_NAME)
+        public Project GetProject (string projectId)
         {
-             ApiResponse<Project> localVarResponse = GetProjectWithHttpInfo(UNKNOWN_PARAMETER_NAME);
+             ApiResponse<Project> localVarResponse = GetProjectWithHttpInfo(projectId);
              return localVarResponse.Data;
         }
 
@@ -1304,13 +1304,13 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s metadata  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of Project</returns>
-        public ApiResponse<Project> GetProjectWithHttpInfo ( UNKNOWN_PARAMETER_NAME)
+        public ApiResponse<Project> GetProjectWithHttpInfo (string projectId)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProject");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProject");
 
             var localVarPath = "/project/{project_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1333,7 +1333,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1368,12 +1368,12 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s metadata  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        public async System.Threading.Tasks.Task<Project> GetProjectAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Project> GetProjectAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Project> localVarResponse = await GetProjectWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, cancellationToken);
+             ApiResponse<Project> localVarResponse = await GetProjectWithHttpInfoAsync(projectId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1382,14 +1382,14 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s metadata  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Project>> GetProjectWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Project>> GetProjectWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProject");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProject");
 
             var localVarPath = "/project/{project_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1412,7 +1412,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1447,11 +1447,11 @@ namespace Org.OpenAPITools.Api
         /// Get deployment status  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>Object</returns>
-        public Object GetProjectDeploymentStatus ( UNKNOWN_PARAMETER_NAME)
+        public Object GetProjectDeploymentStatus (string projectId)
         {
-             ApiResponse<Object> localVarResponse = GetProjectDeploymentStatusWithHttpInfo(UNKNOWN_PARAMETER_NAME);
+             ApiResponse<Object> localVarResponse = GetProjectDeploymentStatusWithHttpInfo(projectId);
              return localVarResponse.Data;
         }
 
@@ -1459,13 +1459,13 @@ namespace Org.OpenAPITools.Api
         /// Get deployment status  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse<Object> GetProjectDeploymentStatusWithHttpInfo ( UNKNOWN_PARAMETER_NAME)
+        public ApiResponse<Object> GetProjectDeploymentStatusWithHttpInfo (string projectId)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProjectDeploymentStatus");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProjectDeploymentStatus");
 
             var localVarPath = "/project/{project_id}/deploy/status";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1488,7 +1488,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1523,12 +1523,12 @@ namespace Org.OpenAPITools.Api
         /// Get deployment status  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> GetProjectDeploymentStatusAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> GetProjectDeploymentStatusAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Object> localVarResponse = await GetProjectDeploymentStatusWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, cancellationToken);
+             ApiResponse<Object> localVarResponse = await GetProjectDeploymentStatusWithHttpInfoAsync(projectId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1537,14 +1537,14 @@ namespace Org.OpenAPITools.Api
         /// Get deployment status  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment status for the project after uploading the binary. Will be: &#x60;DEPLOYED&#x60; or NOT &#x60;DEPLOYED&#x60;.  After it is &#x60;DEPLOYED&#x60;, you can then make requests to your API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetProjectDeploymentStatusWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetProjectDeploymentStatusWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProjectDeploymentStatus");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProjectDeploymentStatus");
 
             var localVarPath = "/project/{project_id}/deploy/status";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1567,7 +1567,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1602,12 +1602,12 @@ namespace Org.OpenAPITools.Api
         /// Get the deployment URL  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <returns>ProjectDeploymentURL</returns>
-        public ProjectDeploymentURL GetProjectDeploymentURL ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE))
+        public ProjectDeploymentURL GetProjectDeploymentURL (string projectId, InlineObject inlineObject = default(InlineObject))
         {
-             ApiResponse<ProjectDeploymentURL> localVarResponse = GetProjectDeploymentURLWithHttpInfo(UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE);
+             ApiResponse<ProjectDeploymentURL> localVarResponse = GetProjectDeploymentURLWithHttpInfo(projectId, inlineObject);
              return localVarResponse.Data;
         }
 
@@ -1615,14 +1615,14 @@ namespace Org.OpenAPITools.Api
         /// Get the deployment URL  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <returns>ApiResponse of ProjectDeploymentURL</returns>
-        public ApiResponse<ProjectDeploymentURL> GetProjectDeploymentURLWithHttpInfo ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE))
+        public ApiResponse<ProjectDeploymentURL> GetProjectDeploymentURLWithHttpInfo (string projectId, InlineObject inlineObject = default(InlineObject))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProjectDeploymentURL");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProjectDeploymentURL");
 
             var localVarPath = "/project/{project_id}/deploy/url";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1646,14 +1646,14 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_BASE_TYPE != null && UNKNOWN_BASE_TYPE.GetType() != typeof(byte[]))
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (inlineObject != null && inlineObject.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(UNKNOWN_BASE_TYPE); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(inlineObject); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = UNKNOWN_BASE_TYPE; // byte array
+                localVarPostBody = inlineObject; // byte array
             }
 
             // authentication (APIKeyID) required
@@ -1689,13 +1689,13 @@ namespace Org.OpenAPITools.Api
         /// Get the deployment URL  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ProjectDeploymentURL</returns>
-        public async System.Threading.Tasks.Task<ProjectDeploymentURL> GetProjectDeploymentURLAsync ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ProjectDeploymentURL> GetProjectDeploymentURLAsync (string projectId, InlineObject inlineObject = default(InlineObject), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ProjectDeploymentURL> localVarResponse = await GetProjectDeploymentURLWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE, cancellationToken);
+             ApiResponse<ProjectDeploymentURL> localVarResponse = await GetProjectDeploymentURLWithHttpInfoAsync(projectId, inlineObject, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1704,15 +1704,15 @@ namespace Org.OpenAPITools.Api
         /// Get the deployment URL  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the deployment URL for the project.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="inlineObject"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ProjectDeploymentURL)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ProjectDeploymentURL>> GetProjectDeploymentURLWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = default(UNKNOWN_BASE_TYPE), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ProjectDeploymentURL>> GetProjectDeploymentURLWithHttpInfoAsync (string projectId, InlineObject inlineObject = default(InlineObject), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProjectDeploymentURL");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProjectDeploymentURL");
 
             var localVarPath = "/project/{project_id}/deploy/url";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1736,14 +1736,14 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_BASE_TYPE != null && UNKNOWN_BASE_TYPE.GetType() != typeof(byte[]))
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (inlineObject != null && inlineObject.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(UNKNOWN_BASE_TYPE); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(inlineObject); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = UNKNOWN_BASE_TYPE; // byte array
+                localVarPostBody = inlineObject; // byte array
             }
 
             // authentication (APIKeyID) required
@@ -1779,11 +1779,11 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s stats  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>List&lt;StatItem&gt;</returns>
-        public List<StatItem> GetProjectStats ( UNKNOWN_PARAMETER_NAME)
+        public List<StatItem> GetProjectStats (string projectId)
         {
-             ApiResponse<List<StatItem>> localVarResponse = GetProjectStatsWithHttpInfo(UNKNOWN_PARAMETER_NAME);
+             ApiResponse<List<StatItem>> localVarResponse = GetProjectStatsWithHttpInfo(projectId);
              return localVarResponse.Data;
         }
 
@@ -1791,13 +1791,13 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s stats  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <returns>ApiResponse of List&lt;StatItem&gt;</returns>
-        public ApiResponse<List<StatItem>> GetProjectStatsWithHttpInfo ( UNKNOWN_PARAMETER_NAME)
+        public ApiResponse<List<StatItem>> GetProjectStatsWithHttpInfo (string projectId)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProjectStats");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProjectStats");
 
             var localVarPath = "/project/{project_id}/stats";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1820,7 +1820,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -1855,12 +1855,12 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s stats  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of List&lt;StatItem&gt;</returns>
-        public async System.Threading.Tasks.Task<List<StatItem>> GetProjectStatsAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<List<StatItem>> GetProjectStatsAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<List<StatItem>> localVarResponse = await GetProjectStatsWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, cancellationToken);
+             ApiResponse<List<StatItem>> localVarResponse = await GetProjectStatsWithHttpInfoAsync(projectId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1869,14 +1869,14 @@ namespace Org.OpenAPITools.Api
         /// Get a project&#39;s stats  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Get the usage stats for your mini-API.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (List&lt;StatItem&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<StatItem>>> GetProjectStatsWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<List<StatItem>>> GetProjectStatsWithHttpInfoAsync (string projectId, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->GetProjectStats");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->GetProjectStats");
 
             var localVarPath = "/project/{project_id}/stats";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1899,7 +1899,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -2077,12 +2077,12 @@ namespace Org.OpenAPITools.Api
         /// Update a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <returns>Project</returns>
-        public Project UpdateProject ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest))
+        public Project UpdateProject (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest))
         {
-             ApiResponse<Project> localVarResponse = UpdateProjectWithHttpInfo(UNKNOWN_PARAMETER_NAME, projectCreateRequest);
+             ApiResponse<Project> localVarResponse = UpdateProjectWithHttpInfo(projectId, projectCreateRequest);
              return localVarResponse.Data;
         }
 
@@ -2090,14 +2090,14 @@ namespace Org.OpenAPITools.Api
         /// Update a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <returns>ApiResponse of Project</returns>
-        public ApiResponse<Project> UpdateProjectWithHttpInfo ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest))
+        public ApiResponse<Project> UpdateProjectWithHttpInfo (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->UpdateProject");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->UpdateProject");
 
             var localVarPath = "/project/{project_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2121,7 +2121,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
             if (projectCreateRequest != null && projectCreateRequest.GetType() != typeof(byte[]))
             {
                 localVarPostBody = this.Configuration.ApiClient.Serialize(projectCreateRequest); // http body (model) parameter
@@ -2164,13 +2164,13 @@ namespace Org.OpenAPITools.Api
         /// Update a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        public async System.Threading.Tasks.Task<Project> UpdateProjectAsync ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Project> UpdateProjectAsync (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Project> localVarResponse = await UpdateProjectWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, projectCreateRequest, cancellationToken);
+             ApiResponse<Project> localVarResponse = await UpdateProjectWithHttpInfoAsync(projectId, projectCreateRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2179,15 +2179,15 @@ namespace Org.OpenAPITools.Api
         /// Update a project  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s metadata. None of these parameters are required. Just provide the parameters that you would like to update.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
         /// <param name="projectCreateRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectWithHttpInfoAsync (string projectId, ProjectCreateRequest projectCreateRequest = default(ProjectCreateRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->UpdateProject");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->UpdateProject");
 
             var localVarPath = "/project/{project_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2211,7 +2211,7 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
             if (projectCreateRequest != null && projectCreateRequest.GetType() != typeof(byte[]))
             {
                 localVarPostBody = this.Configuration.ApiClient.Serialize(projectCreateRequest); // http body (model) parameter
@@ -2254,12 +2254,12 @@ namespace Org.OpenAPITools.Api
         /// Update the project&#39;s documentation  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>Project</returns>
-        public Project UpdateProjectDocumentation ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+        public Project UpdateProjectDocumentation (string projectId, string version)
         {
-             ApiResponse<Project> localVarResponse = UpdateProjectDocumentationWithHttpInfo(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2);
+             ApiResponse<Project> localVarResponse = UpdateProjectDocumentationWithHttpInfo(projectId, version);
              return localVarResponse.Data;
         }
 
@@ -2267,17 +2267,17 @@ namespace Org.OpenAPITools.Api
         /// Update the project&#39;s documentation  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <returns>ApiResponse of Project</returns>
-        public ApiResponse<Project> UpdateProjectDocumentationWithHttpInfo ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+        public ApiResponse<Project> UpdateProjectDocumentationWithHttpInfo (string projectId, string version)
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->UpdateProjectDocumentation");
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME2' is set
-            if (UNKNOWN_PARAMETER_NAME2 == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME2' when calling ProjectApi->UpdateProjectDocumentation");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->UpdateProjectDocumentation");
+            // verify the required parameter 'version' is set
+            if (version == null)
+                throw new ApiException(400, "Missing required parameter 'version' when calling ProjectApi->UpdateProjectDocumentation");
 
             var localVarPath = "/project/{project_id}/{version}/documentation";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2300,8 +2300,8 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_PARAMETER_NAME2 != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME2)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (version != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(version)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))
@@ -2336,13 +2336,13 @@ namespace Org.OpenAPITools.Api
         /// Update the project&#39;s documentation  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Project</returns>
-        public async System.Threading.Tasks.Task<Project> UpdateProjectDocumentationAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Project> UpdateProjectDocumentationAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Project> localVarResponse = await UpdateProjectDocumentationWithHttpInfoAsync(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2, cancellationToken);
+             ApiResponse<Project> localVarResponse = await UpdateProjectDocumentationWithHttpInfoAsync(projectId, version, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2351,18 +2351,18 @@ namespace Org.OpenAPITools.Api
         /// Update the project&#39;s documentation  A complete example and walkthrough of the program can be found &lt;a href&#x3D;\&quot;https://github.com/BL0CK-X/api-developer-program\&quot; target&#x3D;\&quot;_blank\&quot;&gt;here&lt;/a&gt;.  Update your project&#39;s documentation.   Your project&#39;s documentation can only represent *one* version of your API.  Thus, when you call this, the &#x60;current_documentation_version&#x60; attribute of your project is set to the version supplied in the call.  &#x60;Cost: 0 Credit&#x60; (Free) (&lt;a href&#x3D;\&quot;#section/Pricing\&quot;&gt;See Pricing&lt;/a&gt;)
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="UNKNOWN_PARAMETER_NAME">The ID of the project. Created and returned when a project is created.</param>
-        /// <param name="UNKNOWN_PARAMETER_NAME2">The version of the project.</param>
+        /// <param name="projectId">The ID of the project. Created and returned when a project is created.</param>
+        /// <param name="version">The version of the project.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Project)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectDocumentationWithHttpInfoAsync ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Project>> UpdateProjectDocumentationWithHttpInfoAsync (string projectId, string version, CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME' is set
-            if (UNKNOWN_PARAMETER_NAME == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME' when calling ProjectApi->UpdateProjectDocumentation");
-            // verify the required parameter 'UNKNOWN_PARAMETER_NAME2' is set
-            if (UNKNOWN_PARAMETER_NAME2 == null)
-                throw new ApiException(400, "Missing required parameter 'UNKNOWN_PARAMETER_NAME2' when calling ProjectApi->UpdateProjectDocumentation");
+            // verify the required parameter 'projectId' is set
+            if (projectId == null)
+                throw new ApiException(400, "Missing required parameter 'projectId' when calling ProjectApi->UpdateProjectDocumentation");
+            // verify the required parameter 'version' is set
+            if (version == null)
+                throw new ApiException(400, "Missing required parameter 'version' when calling ProjectApi->UpdateProjectDocumentation");
 
             var localVarPath = "/project/{project_id}/{version}/documentation";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2385,8 +2385,8 @@ namespace Org.OpenAPITools.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (UNKNOWN_PARAMETER_NAME != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME)); // path parameter
-            if (UNKNOWN_PARAMETER_NAME2 != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(UNKNOWN_PARAMETER_NAME2)); // path parameter
+            if (projectId != null) localVarPathParams.Add("project_id", this.Configuration.ApiClient.ParameterToString(projectId)); // path parameter
+            if (version != null) localVarPathParams.Add("version", this.Configuration.ApiClient.ParameterToString(version)); // path parameter
 
             // authentication (APIKeyID) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("APIKeyID")))

@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ## CreateProjectVersion
 
-> Project CreateProjectVersion ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+> Project CreateProjectVersion (string projectId, string version)
 
 Create a new project version 
 
@@ -140,13 +140,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
-            var UNKNOWN_PARAMETER_NAME2 = new (); //  | The version of the project.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
+            var version = 2;  // string | The version of the project.
 
             try
             {
                 // Create a new project version 
-                Project result = apiInstance.CreateProjectVersion(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2);
+                Project result = apiInstance.CreateProjectVersion(projectId, version);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -165,8 +165,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
- **UNKNOWN_PARAMETER_NAME2** | [****](.md)| The version of the project. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
+ **version** | **string**| The version of the project. | 
 
 ### Return type
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ## DeleteProject
 
-> void DeleteProject ( UNKNOWN_PARAMETER_NAME)
+> void DeleteProject (string projectId)
 
 Delete a project 
 
@@ -230,12 +230,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
 
             try
             {
                 // Delete a project 
-                apiInstance.DeleteProject(UNKNOWN_PARAMETER_NAME);
+                apiInstance.DeleteProject(projectId);
             }
             catch (ApiException e)
             {
@@ -253,7 +253,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
 
 ### Return type
 
@@ -285,7 +285,7 @@ void (empty response body)
 
 ## DeleteProjectVersion
 
-> Project DeleteProjectVersion ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+> Project DeleteProjectVersion (string projectId, string version)
 
 Delete a project version 
 
@@ -317,13 +317,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
-            var UNKNOWN_PARAMETER_NAME2 = new (); //  | The version of the project.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
+            var version = 2;  // string | The version of the project.
 
             try
             {
                 // Delete a project version 
-                Project result = apiInstance.DeleteProjectVersion(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2);
+                Project result = apiInstance.DeleteProjectVersion(projectId, version);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -342,8 +342,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
- **UNKNOWN_PARAMETER_NAME2** | [****](.md)| The version of the project. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
+ **version** | **string**| The version of the project. | 
 
 ### Return type
 
@@ -375,7 +375,7 @@ Name | Type | Description  | Notes
 
 ## GetProject
 
-> Project GetProject ( UNKNOWN_PARAMETER_NAME)
+> Project GetProject (string projectId)
 
 Get a project's metadata 
 
@@ -407,12 +407,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
 
             try
             {
                 // Get a project's metadata 
-                Project result = apiInstance.GetProject(UNKNOWN_PARAMETER_NAME);
+                Project result = apiInstance.GetProject(projectId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -431,7 +431,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
 
 ### Return type
 
@@ -463,7 +463,7 @@ Name | Type | Description  | Notes
 
 ## GetProjectDeploymentStatus
 
-> Object GetProjectDeploymentStatus ( UNKNOWN_PARAMETER_NAME)
+> Object GetProjectDeploymentStatus (string projectId)
 
 Get deployment status 
 
@@ -495,12 +495,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
 
             try
             {
                 // Get deployment status 
-                Object result = apiInstance.GetProjectDeploymentStatus(UNKNOWN_PARAMETER_NAME);
+                Object result = apiInstance.GetProjectDeploymentStatus(projectId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -519,7 +519,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
 
 ### Return type
 
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 
 ## GetProjectDeploymentURL
 
-> ProjectDeploymentURL GetProjectDeploymentURL ( UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null)
+> ProjectDeploymentURL GetProjectDeploymentURL (string projectId, InlineObject inlineObject = null)
 
 Get the deployment URL 
 
@@ -583,13 +583,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
-            var UNKNOWN_BASE_TYPE = new UNKNOWN_BASE_TYPE(); // UNKNOWN_BASE_TYPE |  (optional) 
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
+            var inlineObject = new InlineObject(); // InlineObject |  (optional) 
 
             try
             {
                 // Get the deployment URL 
-                ProjectDeploymentURL result = apiInstance.GetProjectDeploymentURL(UNKNOWN_PARAMETER_NAME, UNKNOWN_BASE_TYPE);
+                ProjectDeploymentURL result = apiInstance.GetProjectDeploymentURL(projectId, inlineObject);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -608,8 +608,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
- **UNKNOWN_BASE_TYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md)|  | [optional] 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
+ **inlineObject** | [**InlineObject**](InlineObject.md)|  | [optional] 
 
 ### Return type
 
@@ -641,7 +641,7 @@ Name | Type | Description  | Notes
 
 ## GetProjectStats
 
-> List&lt;StatItem&gt; GetProjectStats ( UNKNOWN_PARAMETER_NAME)
+> List&lt;StatItem&gt; GetProjectStats (string projectId)
 
 Get a project's stats 
 
@@ -673,12 +673,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
 
             try
             {
                 // Get a project's stats 
-                List<StatItem> result = apiInstance.GetProjectStats(UNKNOWN_PARAMETER_NAME);
+                List<StatItem> result = apiInstance.GetProjectStats(projectId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -697,7 +697,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
 
 ### Return type
 
@@ -813,7 +813,7 @@ This endpoint does not need any parameter.
 
 ## UpdateProject
 
-> Project UpdateProject ( UNKNOWN_PARAMETER_NAME, ProjectCreateRequest projectCreateRequest = null)
+> Project UpdateProject (string projectId, ProjectCreateRequest projectCreateRequest = null)
 
 Update a project 
 
@@ -845,13 +845,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
             var projectCreateRequest = new ProjectCreateRequest(); // ProjectCreateRequest |  (optional) 
 
             try
             {
                 // Update a project 
-                Project result = apiInstance.UpdateProject(UNKNOWN_PARAMETER_NAME, projectCreateRequest);
+                Project result = apiInstance.UpdateProject(projectId, projectCreateRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -870,7 +870,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
  **projectCreateRequest** | [**ProjectCreateRequest**](ProjectCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -903,7 +903,7 @@ Name | Type | Description  | Notes
 
 ## UpdateProjectDocumentation
 
-> Project UpdateProjectDocumentation ( UNKNOWN_PARAMETER_NAME,  UNKNOWN_PARAMETER_NAME2)
+> Project UpdateProjectDocumentation (string projectId, string version)
 
 Update the project's documentation 
 
@@ -935,13 +935,13 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("APISecretKey", "Bearer");
 
             var apiInstance = new ProjectApi(Configuration.Default);
-            var UNKNOWN_PARAMETER_NAME = new (); //  | The ID of the project. Created and returned when a project is created.
-            var UNKNOWN_PARAMETER_NAME2 = new (); //  | The version of the project.
+            var projectId = L3cPm0cJlf5MeDXzGLQJJ4vlzndJCC;  // string | The ID of the project. Created and returned when a project is created.
+            var version = 2;  // string | The version of the project.
 
             try
             {
                 // Update the project's documentation 
-                Project result = apiInstance.UpdateProjectDocumentation(UNKNOWN_PARAMETER_NAME, UNKNOWN_PARAMETER_NAME2);
+                Project result = apiInstance.UpdateProjectDocumentation(projectId, version);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -960,8 +960,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **UNKNOWN_PARAMETER_NAME** | [****](.md)| The ID of the project. Created and returned when a project is created. | 
- **UNKNOWN_PARAMETER_NAME2** | [****](.md)| The version of the project. | 
+ **projectId** | **string**| The ID of the project. Created and returned when a project is created. | 
+ **version** | **string**| The version of the project. | 
 
 ### Return type
 
