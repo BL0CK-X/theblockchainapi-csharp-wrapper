@@ -274,7 +274,7 @@ Class | Method | HTTP request | Description
 *SolanaWalletApi* | [**SolanaGetWalletTransactions**](docs/SolanaWalletApi.md#solanagetwallettransactions) | **GET** /solana/wallet/{network}/{public_key}/transactions | Get address's associated transaction signatures
 *SolanaWalletApi* | [**SolanaTransfer**](docs/SolanaWalletApi.md#solanatransfer) | **POST** /solana/wallet/transfer | Transfer SOL, a token, or an NFT to another address
 *TokenApi* | [**GetTokenMetadata**](docs/TokenApi.md#gettokenmetadata) | **GET** /{blockchain}/{network}/token/{token_blockchain_identifier} | Get a token's metadata
-*TokenApi* | [**ListAllTokens**](docs/TokenApi.md#listalltokens) | **POST** /{blockchain}/{network}/all_tokens | List all tokens
+*TokenApi* | [**ListAllTokens**](docs/TokenApi.md#listalltokens) | **GET** /{blockchain}/{network}/all_tokens | List all tokens
 *TransactionApi* | [**GetTransaction**](docs/TransactionApi.md#gettransaction) | **GET** /{blockchain}/transaction/{network}/{transaction_blockchain_identifier} | Get the details of a transaction made on a blockchain
 *WalletApi* | [**DerivePrivateKey**](docs/WalletApi.md#deriveprivatekey) | **POST** /{blockchain}/wallet/private_key | Derive private key
 *WalletApi* | [**DeriveWalletIdentifier**](docs/WalletApi.md#derivewalletidentifier) | **POST** /{blockchain}/wallet/identifier | Derive wallet identifier

@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ## GetNameForBlockchainIdentifier
 
-> InputName GetNameForBlockchainIdentifier (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = null)
+> InputName GetNameForBlockchainIdentifier (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = null)
 
 Get the name
 
@@ -138,13 +138,12 @@ namespace Example
             var apiInstance = new NameServiceApi(Configuration.Default);
             var blockchain = "ethereum";  // string | The blockchain you want to use 
             var network = ropsten;  // string | The network of the blockchain you selected  - Solana: `devnet`, `mainnet-beta` - Ethereum: `ropsten`, `mainnet`  Defaults when not provided (not applicable to path parameters): - Solana: `devnet` - Ethereum: `ropsten`
-            var blockchainIdentifier = "ethereum";  // string | The identifier of the token (e.g., `mint_address` on `Solana` or `token_address` on `Ethereum`) 
             var inputBlockchainIdentifier = new InputBlockchainIdentifier(); // InputBlockchainIdentifier |  (optional) 
 
             try
             {
                 // Get the name
-                InputName result = apiInstance.GetNameForBlockchainIdentifier(blockchain, network, blockchainIdentifier, inputBlockchainIdentifier);
+                InputName result = apiInstance.GetNameForBlockchainIdentifier(blockchain, network, inputBlockchainIdentifier);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -165,7 +164,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **blockchain** | **string**| The blockchain you want to use  | 
  **network** | **string**| The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60; | 
- **blockchainIdentifier** | **string**| The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;)  | 
  **inputBlockchainIdentifier** | [**InputBlockchainIdentifier**](InputBlockchainIdentifier.md)|  | [optional] 
 
 ### Return type

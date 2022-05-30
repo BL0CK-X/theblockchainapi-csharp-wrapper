@@ -118,11 +118,6 @@ docs/WalletApi.md
 docs/WalletIdentifiers.md
 git_push.sh
 mono_nunit_test.sh
-src/Org.OpenAPITools.Test/Api/NameServiceApiTests.cs
-src/Org.OpenAPITools.Test/Api/TokenApiTests.cs
-src/Org.OpenAPITools.Test/Model/InputBlockchainIdentifierTests.cs
-src/Org.OpenAPITools.Test/Model/InputNameTests.cs
-src/Org.OpenAPITools.Test/Model/TokenMetadataResponseTests.cs
 src/Org.OpenAPITools.Test/Org.OpenAPITools.Test.csproj
 src/Org.OpenAPITools.Test/packages.config
 src/Org.OpenAPITools/Api/EndpointApi.cs

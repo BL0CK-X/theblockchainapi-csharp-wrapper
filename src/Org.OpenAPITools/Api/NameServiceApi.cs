@@ -59,10 +59,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <returns>InputName</returns>
-        InputName GetNameForBlockchainIdentifier (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier));
+        InputName GetNameForBlockchainIdentifier (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier));
 
         /// <summary>
         /// Get the name
@@ -73,10 +72,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <returns>ApiResponse of InputName</returns>
-        ApiResponse<InputName> GetNameForBlockchainIdentifierWithHttpInfo (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier));
+        ApiResponse<InputName> GetNameForBlockchainIdentifierWithHttpInfo (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -115,11 +113,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of InputName</returns>
-        System.Threading.Tasks.Task<InputName> GetNameForBlockchainIdentifierAsync (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<InputName> GetNameForBlockchainIdentifierAsync (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get the name
@@ -130,11 +127,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (InputName)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InputName>> GetNameForBlockchainIdentifierWithHttpInfoAsync (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<InputName>> GetNameForBlockchainIdentifierWithHttpInfoAsync (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -441,12 +437,11 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <returns>InputName</returns>
-        public InputName GetNameForBlockchainIdentifier (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier))
+        public InputName GetNameForBlockchainIdentifier (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier))
         {
-             ApiResponse<InputName> localVarResponse = GetNameForBlockchainIdentifierWithHttpInfo(blockchain, network, blockchainIdentifier, inputBlockchainIdentifier);
+             ApiResponse<InputName> localVarResponse = GetNameForBlockchainIdentifierWithHttpInfo(blockchain, network, inputBlockchainIdentifier);
              return localVarResponse.Data;
         }
 
@@ -456,10 +451,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <returns>ApiResponse of InputName</returns>
-        public ApiResponse<InputName> GetNameForBlockchainIdentifierWithHttpInfo (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier))
+        public ApiResponse<InputName> GetNameForBlockchainIdentifierWithHttpInfo (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier))
         {
             // verify the required parameter 'blockchain' is set
             if (blockchain == null)
@@ -467,9 +461,6 @@ namespace Org.OpenAPITools.Api
             // verify the required parameter 'network' is set
             if (network == null)
                 throw new ApiException(400, "Missing required parameter 'network' when calling NameServiceApi->GetNameForBlockchainIdentifier");
-            // verify the required parameter 'blockchainIdentifier' is set
-            if (blockchainIdentifier == null)
-                throw new ApiException(400, "Missing required parameter 'blockchainIdentifier' when calling NameServiceApi->GetNameForBlockchainIdentifier");
 
             var localVarPath = "/{blockchain}/{network}/name_service/blockchain_identifier_to_name";
             var localVarPathParams = new Dictionary<String, String>();
@@ -495,7 +486,6 @@ namespace Org.OpenAPITools.Api
 
             if (blockchain != null) localVarPathParams.Add("blockchain", this.Configuration.ApiClient.ParameterToString(blockchain)); // path parameter
             if (network != null) localVarPathParams.Add("network", this.Configuration.ApiClient.ParameterToString(network)); // path parameter
-            if (blockchainIdentifier != null) localVarPathParams.Add("blockchain_identifier", this.Configuration.ApiClient.ParameterToString(blockchainIdentifier)); // path parameter
             if (inputBlockchainIdentifier != null && inputBlockchainIdentifier.GetType() != typeof(byte[]))
             {
                 localVarPostBody = this.Configuration.ApiClient.Serialize(inputBlockchainIdentifier); // http body (model) parameter
@@ -540,13 +530,12 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of InputName</returns>
-        public async System.Threading.Tasks.Task<InputName> GetNameForBlockchainIdentifierAsync (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<InputName> GetNameForBlockchainIdentifierAsync (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InputName> localVarResponse = await GetNameForBlockchainIdentifierWithHttpInfoAsync(blockchain, network, blockchainIdentifier, inputBlockchainIdentifier, cancellationToken);
+             ApiResponse<InputName> localVarResponse = await GetNameForBlockchainIdentifierWithHttpInfoAsync(blockchain, network, inputBlockchainIdentifier, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -557,11 +546,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="blockchain">The blockchain you want to use </param>
         /// <param name="network">The network of the blockchain you selected  - Solana: &#x60;devnet&#x60;, &#x60;mainnet-beta&#x60; - Ethereum: &#x60;ropsten&#x60;, &#x60;mainnet&#x60;  Defaults when not provided (not applicable to path parameters): - Solana: &#x60;devnet&#x60; - Ethereum: &#x60;ropsten&#x60;</param>
-        /// <param name="blockchainIdentifier">The identifier of the token (e.g., &#x60;mint_address&#x60; on &#x60;Solana&#x60; or &#x60;token_address&#x60; on &#x60;Ethereum&#x60;) </param>
         /// <param name="inputBlockchainIdentifier"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (InputName)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InputName>> GetNameForBlockchainIdentifierWithHttpInfoAsync (string blockchain, string network, string blockchainIdentifier, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<InputName>> GetNameForBlockchainIdentifierWithHttpInfoAsync (string blockchain, string network, InputBlockchainIdentifier inputBlockchainIdentifier = default(InputBlockchainIdentifier), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'blockchain' is set
             if (blockchain == null)
@@ -569,9 +557,6 @@ namespace Org.OpenAPITools.Api
             // verify the required parameter 'network' is set
             if (network == null)
                 throw new ApiException(400, "Missing required parameter 'network' when calling NameServiceApi->GetNameForBlockchainIdentifier");
-            // verify the required parameter 'blockchainIdentifier' is set
-            if (blockchainIdentifier == null)
-                throw new ApiException(400, "Missing required parameter 'blockchainIdentifier' when calling NameServiceApi->GetNameForBlockchainIdentifier");
 
             var localVarPath = "/{blockchain}/{network}/name_service/blockchain_identifier_to_name";
             var localVarPathParams = new Dictionary<String, String>();
@@ -597,7 +582,6 @@ namespace Org.OpenAPITools.Api
 
             if (blockchain != null) localVarPathParams.Add("blockchain", this.Configuration.ApiClient.ParameterToString(blockchain)); // path parameter
             if (network != null) localVarPathParams.Add("network", this.Configuration.ApiClient.ParameterToString(network)); // path parameter
-            if (blockchainIdentifier != null) localVarPathParams.Add("blockchain_identifier", this.Configuration.ApiClient.ParameterToString(blockchainIdentifier)); // path parameter
             if (inputBlockchainIdentifier != null && inputBlockchainIdentifier.GetType() != typeof(byte[]))
             {
                 localVarPostBody = this.Configuration.ApiClient.Serialize(inputBlockchainIdentifier); // http body (model) parameter
