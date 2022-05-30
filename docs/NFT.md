@@ -13,6 +13,11 @@ Name | Type | Description | Notes
 **SellerFeeBasisPoints** | **decimal** |  | [optional] 
 **MintSecretRecoveryPhrase** | **string** |  | [optional] 
 **ExplorerUrl** | **string** |  | [optional] 
+**MetadataAccount** | **string** | The metadata account of the NFT  | [optional] 
+**EditionNonce** | **decimal** |  | [optional] 
+**TokenStandard** | **decimal** |  | [optional] 
+**Collection** | [**NFTCollection**](NFTCollection.md) |  | [optional] 
+**Uses** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

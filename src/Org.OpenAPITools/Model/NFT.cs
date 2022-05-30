@@ -41,7 +41,12 @@ namespace Org.OpenAPITools.Model
         /// <param name="sellerFeeBasisPoints">sellerFeeBasisPoints.</param>
         /// <param name="mintSecretRecoveryPhrase">mintSecretRecoveryPhrase.</param>
         /// <param name="explorerUrl">explorerUrl.</param>
-        public NFT(NFTData data = default(NFTData), bool isMutable = default(bool), string mint = default(string), bool primarySaleHappened = default(bool), string updateAuthority = default(string), decimal sellerFeeBasisPoints = default(decimal), string mintSecretRecoveryPhrase = default(string), string explorerUrl = default(string))
+        /// <param name="metadataAccount">The metadata account of the NFT .</param>
+        /// <param name="editionNonce">editionNonce.</param>
+        /// <param name="tokenStandard">tokenStandard.</param>
+        /// <param name="collection">collection.</param>
+        /// <param name="uses">uses.</param>
+        public NFT(NFTData data = default(NFTData), bool isMutable = default(bool), string mint = default(string), bool primarySaleHappened = default(bool), string updateAuthority = default(string), decimal sellerFeeBasisPoints = default(decimal), string mintSecretRecoveryPhrase = default(string), string explorerUrl = default(string), string metadataAccount = default(string), decimal editionNonce = default(decimal), decimal tokenStandard = default(decimal), NFTCollection collection = default(NFTCollection), decimal uses = default(decimal))
         {
             this.Data = data;
             this.IsMutable = isMutable;
@@ -51,6 +56,11 @@ namespace Org.OpenAPITools.Model
             this.SellerFeeBasisPoints = sellerFeeBasisPoints;
             this.MintSecretRecoveryPhrase = mintSecretRecoveryPhrase;
             this.ExplorerUrl = explorerUrl;
+            this.MetadataAccount = metadataAccount;
+            this.EditionNonce = editionNonce;
+            this.TokenStandard = tokenStandard;
+            this.Collection = collection;
+            this.Uses = uses;
         }
 
         /// <summary>
@@ -104,6 +114,37 @@ namespace Org.OpenAPITools.Model
         public string ExplorerUrl { get; set; }
 
         /// <summary>
+        /// The metadata account of the NFT 
+        /// </summary>
+        /// <value>The metadata account of the NFT </value>
+        [DataMember(Name="metadata_account", EmitDefaultValue=false)]
+        public string MetadataAccount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EditionNonce
+        /// </summary>
+        [DataMember(Name="edition_nonce", EmitDefaultValue=false)]
+        public decimal EditionNonce { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TokenStandard
+        /// </summary>
+        [DataMember(Name="token_standard", EmitDefaultValue=false)]
+        public decimal TokenStandard { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Collection
+        /// </summary>
+        [DataMember(Name="collection", EmitDefaultValue=false)]
+        public NFTCollection Collection { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Uses
+        /// </summary>
+        [DataMember(Name="uses", EmitDefaultValue=false)]
+        public decimal Uses { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -119,6 +160,11 @@ namespace Org.OpenAPITools.Model
             sb.Append("  SellerFeeBasisPoints: ").Append(SellerFeeBasisPoints).Append("\n");
             sb.Append("  MintSecretRecoveryPhrase: ").Append(MintSecretRecoveryPhrase).Append("\n");
             sb.Append("  ExplorerUrl: ").Append(ExplorerUrl).Append("\n");
+            sb.Append("  MetadataAccount: ").Append(MetadataAccount).Append("\n");
+            sb.Append("  EditionNonce: ").Append(EditionNonce).Append("\n");
+            sb.Append("  TokenStandard: ").Append(TokenStandard).Append("\n");
+            sb.Append("  Collection: ").Append(Collection).Append("\n");
+            sb.Append("  Uses: ").Append(Uses).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -192,6 +238,31 @@ namespace Org.OpenAPITools.Model
                     this.ExplorerUrl == input.ExplorerUrl ||
                     (this.ExplorerUrl != null &&
                     this.ExplorerUrl.Equals(input.ExplorerUrl))
+                ) && 
+                (
+                    this.MetadataAccount == input.MetadataAccount ||
+                    (this.MetadataAccount != null &&
+                    this.MetadataAccount.Equals(input.MetadataAccount))
+                ) && 
+                (
+                    this.EditionNonce == input.EditionNonce ||
+                    (this.EditionNonce != null &&
+                    this.EditionNonce.Equals(input.EditionNonce))
+                ) && 
+                (
+                    this.TokenStandard == input.TokenStandard ||
+                    (this.TokenStandard != null &&
+                    this.TokenStandard.Equals(input.TokenStandard))
+                ) && 
+                (
+                    this.Collection == input.Collection ||
+                    (this.Collection != null &&
+                    this.Collection.Equals(input.Collection))
+                ) && 
+                (
+                    this.Uses == input.Uses ||
+                    (this.Uses != null &&
+                    this.Uses.Equals(input.Uses))
                 );
         }
 
@@ -220,6 +291,16 @@ namespace Org.OpenAPITools.Model
                     hashCode = hashCode * 59 + this.MintSecretRecoveryPhrase.GetHashCode();
                 if (this.ExplorerUrl != null)
                     hashCode = hashCode * 59 + this.ExplorerUrl.GetHashCode();
+                if (this.MetadataAccount != null)
+                    hashCode = hashCode * 59 + this.MetadataAccount.GetHashCode();
+                if (this.EditionNonce != null)
+                    hashCode = hashCode * 59 + this.EditionNonce.GetHashCode();
+                if (this.TokenStandard != null)
+                    hashCode = hashCode * 59 + this.TokenStandard.GetHashCode();
+                if (this.Collection != null)
+                    hashCode = hashCode * 59 + this.Collection.GetHashCode();
+                if (this.Uses != null)
+                    hashCode = hashCode * 59 + this.Uses.GetHashCode();
                 return hashCode;
             }
         }

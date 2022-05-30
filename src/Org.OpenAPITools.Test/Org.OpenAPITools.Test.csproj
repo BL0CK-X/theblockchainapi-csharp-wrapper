@@ -81,7 +81,7 @@ Contact: info@blockchainapi.com
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Org.OpenAPITools\Org.OpenAPITools.csproj">
-          <Project>{F5B9441A-463E-42DC-A257-0C811DB75F05}</Project>
+          <Project>{C242DD3D-3AC3-4BB7-BCD4-F9B5EE4558B4}</Project>
           <Name>Org.OpenAPITools</Name>
       </ProjectReference>
   </ItemGroup>

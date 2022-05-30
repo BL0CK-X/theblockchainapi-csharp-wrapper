@@ -39,8 +39,10 @@ namespace Org.OpenAPITools.Model
         /// Initializes a new instance of the <see cref="BuyRequest" /> class.
         /// </summary>
         /// <param name="wallet">wallet (required).</param>
+        /// <param name="skipChecks">Whether or not to skip the provided checks (e.g., Is this NFT not listed? Is this NFT listed for a different price than you set?) and proceed with the transaction.  (default to false).</param>
+        /// <param name="sellerPublicKey">The public key of the seller. Only required if providing &#x60;skip_checks&#x60;. Otherwise, don&#39;t provide it.  (default to &quot;null&quot;).</param>
         /// <param name="nftPrice">The number of lamports you are expecting to purchase the NFT for. We check the price of the NFT before  purchasing it to ensure that it matches your expectation. There are 1e9 (1 billion) Lamports in a SOL.  (required).</param>
-        public BuyRequest(Wallet wallet = default(Wallet), decimal nftPrice = default(decimal))
+        public BuyRequest(Wallet wallet = default(Wallet), bool skipChecks = false, string sellerPublicKey = "null", decimal nftPrice = default(decimal))
         {
             // to ensure "wallet" is required (not null)
             if (wallet == null)
@@ -62,6 +64,24 @@ namespace Org.OpenAPITools.Model
                 this.NftPrice = nftPrice;
             }
 
+            // use default value if no "skipChecks" provided
+            if (skipChecks == null)
+            {
+                this.SkipChecks = false;
+            }
+            else
+            {
+                this.SkipChecks = skipChecks;
+            }
+            // use default value if no "sellerPublicKey" provided
+            if (sellerPublicKey == null)
+            {
+                this.SellerPublicKey = "null";
+            }
+            else
+            {
+                this.SellerPublicKey = sellerPublicKey;
+            }
         }
 
         /// <summary>
@@ -69,6 +89,20 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name="wallet", EmitDefaultValue=true)]
         public Wallet Wallet { get; set; }
+
+        /// <summary>
+        /// Whether or not to skip the provided checks (e.g., Is this NFT not listed? Is this NFT listed for a different price than you set?) and proceed with the transaction. 
+        /// </summary>
+        /// <value>Whether or not to skip the provided checks (e.g., Is this NFT not listed? Is this NFT listed for a different price than you set?) and proceed with the transaction. </value>
+        [DataMember(Name="skip_checks", EmitDefaultValue=false)]
+        public bool SkipChecks { get; set; }
+
+        /// <summary>
+        /// The public key of the seller. Only required if providing &#x60;skip_checks&#x60;. Otherwise, don&#39;t provide it. 
+        /// </summary>
+        /// <value>The public key of the seller. Only required if providing &#x60;skip_checks&#x60;. Otherwise, don&#39;t provide it. </value>
+        [DataMember(Name="seller_public_key", EmitDefaultValue=false)]
+        public string SellerPublicKey { get; set; }
 
         /// <summary>
         /// The number of lamports you are expecting to purchase the NFT for. We check the price of the NFT before  purchasing it to ensure that it matches your expectation. There are 1e9 (1 billion) Lamports in a SOL. 
@@ -86,6 +120,8 @@ namespace Org.OpenAPITools.Model
             var sb = new StringBuilder();
             sb.Append("class BuyRequest {\n");
             sb.Append("  Wallet: ").Append(Wallet).Append("\n");
+            sb.Append("  SkipChecks: ").Append(SkipChecks).Append("\n");
+            sb.Append("  SellerPublicKey: ").Append(SellerPublicKey).Append("\n");
             sb.Append("  NftPrice: ").Append(NftPrice).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -127,6 +163,16 @@ namespace Org.OpenAPITools.Model
                     this.Wallet.Equals(input.Wallet))
                 ) && 
                 (
+                    this.SkipChecks == input.SkipChecks ||
+                    (this.SkipChecks != null &&
+                    this.SkipChecks.Equals(input.SkipChecks))
+                ) && 
+                (
+                    this.SellerPublicKey == input.SellerPublicKey ||
+                    (this.SellerPublicKey != null &&
+                    this.SellerPublicKey.Equals(input.SellerPublicKey))
+                ) && 
+                (
                     this.NftPrice == input.NftPrice ||
                     (this.NftPrice != null &&
                     this.NftPrice.Equals(input.NftPrice))
@@ -144,6 +190,10 @@ namespace Org.OpenAPITools.Model
                 int hashCode = 41;
                 if (this.Wallet != null)
                     hashCode = hashCode * 59 + this.Wallet.GetHashCode();
+                if (this.SkipChecks != null)
+                    hashCode = hashCode * 59 + this.SkipChecks.GetHashCode();
+                if (this.SellerPublicKey != null)
+                    hashCode = hashCode * 59 + this.SellerPublicKey.GetHashCode();
                 if (this.NftPrice != null)
                     hashCode = hashCode * 59 + this.NftPrice.GetHashCode();
                 return hashCode;

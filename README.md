@@ -228,7 +228,8 @@ Class | Method | HTTP request | Description
 *EndpointApi* | [**GetEndpoint**](docs/EndpointApi.md#getendpoint) | **POST** /endpoint/metadata | Get an endpoint's metadata 
 *EndpointApi* | [**ListEndpoints**](docs/EndpointApi.md#listendpoints) | **GET** /endpoint/list | List all endpoints 
 *EndpointApi* | [**SetEndpoint**](docs/EndpointApi.md#setendpoint) | **POST** /endpoint | Create / update an endpoint 
-*FileApi* | [**UploadFile**](docs/FileApi.md#uploadfile) | **POST** /file | Upload a file
+*NameServiceApi* | [**GetBlockchainIdentifierFromName**](docs/NameServiceApi.md#getblockchainidentifierfromname) | **POST** /{blockchain}/{network}/name_service/name_to_blockchain_identifier | Get the identifier
+*NameServiceApi* | [**GetNameForBlockchainIdentifier**](docs/NameServiceApi.md#getnameforblockchainidentifier) | **POST** /{blockchain}/{network}/name_service/blockchain_identifier_to_name | Get the name
 *ProjectApi* | [**CreateProject**](docs/ProjectApi.md#createproject) | **POST** /project | Create a project 
 *ProjectApi* | [**CreateProjectVersion**](docs/ProjectApi.md#createprojectversion) | **POST** /project/{project_id}/{version} | Create a new project version 
 *ProjectApi* | [**DeleteProject**](docs/ProjectApi.md#deleteproject) | **DELETE** /project/{project_id} | Delete a project 
@@ -258,9 +259,6 @@ Class | Method | HTTP request | Description
 *SolanaNFTMarketplacesApi* | [**SolanaBuyNFT**](docs/SolanaNFTMarketplacesApi.md#solanabuynft) | **POST** /solana/nft/marketplaces/{exchange}/buy/{network}/{mint_address} | Buy
 *SolanaNFTMarketplacesApi* | [**SolanaDelistNFT**](docs/SolanaNFTMarketplacesApi.md#solanadelistnft) | **POST** /solana/nft/marketplaces/{exchange}/delist/{network}/{mint_address} | Delist
 *SolanaNFTMarketplacesApi* | [**SolanaGetNFTListing**](docs/SolanaNFTMarketplacesApi.md#solanagetnftlisting) | **GET** /solana/nft/marketplaces/listing/{network}/{mint_address} | Get NFT Listing
-*SolanaNFTMarketplacesApi* | [**SolanaGetNFTMarketplaceAnalytics**](docs/SolanaNFTMarketplacesApi.md#solanagetnftmarketplaceanalytics) | **POST** /solana/nft/marketplaces/analytics | Get NFT Analytics
-*SolanaNFTMarketplacesApi* | [**SolanaGetNFTMarketplaceMarketShare**](docs/SolanaNFTMarketplacesApi.md#solanagetnftmarketplacemarketshare) | **GET** /solana/nft/marketplaces/analytics/market_share | Get Marketplace Market Share
-*SolanaNFTMarketplacesApi* | [**SolanaGetNFTMarketplaceRecentTransactions**](docs/SolanaNFTMarketplacesApi.md#solanagetnftmarketplacerecenttransactions) | **GET** /solana/nft/marketplaces/analytics/recent_transactions | Get Recent NFT Transactions
 *SolanaNFTMarketplacesApi* | [**SolanaListNFT**](docs/SolanaNFTMarketplacesApi.md#solanalistnft) | **POST** /solana/nft/marketplaces/{exchange}/list/{network}/{mint_address} | List
 *SolanaSPLTokenApi* | [**SolanaGetSPLToken**](docs/SolanaSPLTokenApi.md#solanagetspltoken) | **GET** /solana/spl-token/{network}/{public_key} | Get SPL token metadata
 *SolanaTransactionApi* | [**SolanaGetTransaction**](docs/SolanaTransactionApi.md#solanagettransaction) | **GET** /solana/transaction/{network}/{tx_signature} | Get the details of a transaction made on Solana
@@ -275,6 +273,16 @@ Class | Method | HTTP request | Description
 *SolanaWalletApi* | [**SolanaGetTokensBelongingToWallet**](docs/SolanaWalletApi.md#solanagettokensbelongingtowallet) | **GET** /solana/wallet/{network}/{public_key}/tokens | Get address's tokens and respective balances
 *SolanaWalletApi* | [**SolanaGetWalletTransactions**](docs/SolanaWalletApi.md#solanagetwallettransactions) | **GET** /solana/wallet/{network}/{public_key}/transactions | Get address's associated transaction signatures
 *SolanaWalletApi* | [**SolanaTransfer**](docs/SolanaWalletApi.md#solanatransfer) | **POST** /solana/wallet/transfer | Transfer SOL, a token, or an NFT to another address
+*TokenApi* | [**GetTokenMetadata**](docs/TokenApi.md#gettokenmetadata) | **GET** /{blockchain}/{network}/token/{token_blockchain_identifier} | Get a token's metadata
+*TokenApi* | [**ListAllTokens**](docs/TokenApi.md#listalltokens) | **POST** /{blockchain}/{network}/all_tokens | List all tokens
+*TransactionApi* | [**GetTransaction**](docs/TransactionApi.md#gettransaction) | **GET** /{blockchain}/transaction/{network}/{transaction_blockchain_identifier} | Get the details of a transaction made on a blockchain
+*WalletApi* | [**DerivePrivateKey**](docs/WalletApi.md#deriveprivatekey) | **POST** /{blockchain}/wallet/private_key | Derive private key
+*WalletApi* | [**DeriveWalletIdentifier**](docs/WalletApi.md#derivewalletidentifier) | **POST** /{blockchain}/wallet/identifier | Derive wallet identifier
+*WalletApi* | [**GeneratePrivateKey**](docs/WalletApi.md#generateprivatekey) | **POST** /{blockchain}/wallet/generate/private_key | Generate private key
+*WalletApi* | [**GenerateSeedPhrase**](docs/WalletApi.md#generateseedphrase) | **POST** /{blockchain}/wallet/generate/secret_recovery_phrase | Generate seed phrase
+*WalletApi* | [**GetAirdrop**](docs/WalletApi.md#getairdrop) | **POST** /{blockchain}/wallet/airdrop | Get an airdrop
+*WalletApi* | [**GetBalance**](docs/WalletApi.md#getbalance) | **POST** /{blockchain}/wallet/balance | Get wallet's balance of X
+*WalletApi* | [**Transfer**](docs/WalletApi.md#transfer) | **POST** /{blockchain}/wallet/transfer | Transfer crypto, a token, or an NFT to another wallet
 
 
 ## Documentation for Models
@@ -286,7 +294,10 @@ Class | Method | HTTP request | Description
  - [Model.AccountIsNFT](docs/AccountIsNFT.md)
  - [Model.AccountValue](docs/AccountValue.md)
  - [Model.AirdropRequest](docs/AirdropRequest.md)
+ - [Model.AvalancheCChainPublicAddress](docs/AvalancheCChainPublicAddress.md)
+ - [Model.AvalancheXPChainPublicAddress](docs/AvalancheXPChainPublicAddress.md)
  - [Model.B58PrivateKey](docs/B58PrivateKey.md)
+ - [Model.BSCPublicAddress](docs/BSCPublicAddress.md)
  - [Model.BalanceRequest](docs/BalanceRequest.md)
  - [Model.BalanceResponse](docs/BalanceResponse.md)
  - [Model.BuyRequest](docs/BuyRequest.md)
@@ -299,8 +310,27 @@ Class | Method | HTTP request | Description
  - [Model.DoubleTransferResponse](docs/DoubleTransferResponse.md)
  - [Model.Endpoint](docs/Endpoint.md)
  - [Model.EndpointReference](docs/EndpointReference.md)
+ - [Model.EthereumPublicAddress](docs/EthereumPublicAddress.md)
+ - [Model.EthereumTransaction](docs/EthereumTransaction.md)
+ - [Model.EthereumTransactionCompiledResponse](docs/EthereumTransactionCompiledResponse.md)
+ - [Model.EthereumTransactionMadeResponse](docs/EthereumTransactionMadeResponse.md)
  - [Model.FeePayerWallet](docs/FeePayerWallet.md)
+ - [Model.GeneralAirdropRequest](docs/GeneralAirdropRequest.md)
+ - [Model.GeneralB58PrivateKey](docs/GeneralB58PrivateKey.md)
+ - [Model.GeneralBalanceRequest](docs/GeneralBalanceRequest.md)
+ - [Model.GeneralBalanceResponse](docs/GeneralBalanceResponse.md)
+ - [Model.GeneralFeePayerWallet](docs/GeneralFeePayerWallet.md)
+ - [Model.GeneralGeneratePrivateKeyResponse](docs/GeneralGeneratePrivateKeyResponse.md)
+ - [Model.GeneralPrivateKey](docs/GeneralPrivateKey.md)
+ - [Model.GeneralSecretPhrase](docs/GeneralSecretPhrase.md)
+ - [Model.GeneralSecretRecoveryPhrase](docs/GeneralSecretRecoveryPhrase.md)
+ - [Model.GeneralTransaction](docs/GeneralTransaction.md)
+ - [Model.GeneralTransactionMadeResponse](docs/GeneralTransactionMadeResponse.md)
+ - [Model.GeneralTransactionResponse](docs/GeneralTransactionResponse.md)
+ - [Model.GeneralTransferRequest](docs/GeneralTransferRequest.md)
+ - [Model.GeneralWallet](docs/GeneralWallet.md)
  - [Model.GeneratePrivateKey](docs/GeneratePrivateKey.md)
+ - [Model.GenerateSeedPhraseRequest](docs/GenerateSeedPhraseRequest.md)
  - [Model.GetAllNFTsResponse](docs/GetAllNFTsResponse.md)
  - [Model.GetAllNFTsResponseMintedNfts](docs/GetAllNFTsResponseMintedNfts.md)
  - [Model.GetAllNFTsResponseUnmintedNfts](docs/GetAllNFTsResponseUnmintedNfts.md)
@@ -310,12 +340,14 @@ Class | Method | HTTP request | Description
  - [Model.GetCandyMetadataRequest](docs/GetCandyMetadataRequest.md)
  - [Model.GetCandyMetadataResponse](docs/GetCandyMetadataResponse.md)
  - [Model.GetCandyMetadataResponseCreators](docs/GetCandyMetadataResponseCreators.md)
- - [Model.GetFileResponse](docs/GetFileResponse.md)
  - [Model.GetNFTListingResponse](docs/GetNFTListingResponse.md)
  - [Model.GetPublicKeyRequest](docs/GetPublicKeyRequest.md)
  - [Model.GetSPLTokenResponse](docs/GetSPLTokenResponse.md)
  - [Model.Group](docs/Group.md)
+ - [Model.HexPrivateKey](docs/HexPrivateKey.md)
  - [Model.InlineObject](docs/InlineObject.md)
+ - [Model.InputBlockchainIdentifier](docs/InputBlockchainIdentifier.md)
+ - [Model.InputName](docs/InputName.md)
  - [Model.ListNFTsResponse](docs/ListNFTsResponse.md)
  - [Model.ListRequest](docs/ListRequest.md)
  - [Model.ListResponse](docs/ListResponse.md)
@@ -323,9 +355,7 @@ Class | Method | HTTP request | Description
  - [Model.MintNFTRequest](docs/MintNFTRequest.md)
  - [Model.MintNFTResponse](docs/MintNFTResponse.md)
  - [Model.NFT](docs/NFT.md)
- - [Model.NFTAnalyticsRequest](docs/NFTAnalyticsRequest.md)
- - [Model.NFTAnalyticsResponse](docs/NFTAnalyticsResponse.md)
- - [Model.NFTAnalyticsResponseTransactionHistory](docs/NFTAnalyticsResponseTransactionHistory.md)
+ - [Model.NFTCollection](docs/NFTCollection.md)
  - [Model.NFTData](docs/NFTData.md)
  - [Model.NFTMintErrorResponse](docs/NFTMintErrorResponse.md)
  - [Model.NFTMintFee](docs/NFTMintFee.md)
@@ -333,7 +363,7 @@ Class | Method | HTTP request | Description
  - [Model.NFTOwnerResponse](docs/NFTOwnerResponse.md)
  - [Model.NFTSearchRequest](docs/NFTSearchRequest.md)
  - [Model.NFTSearchResponse](docs/NFTSearchResponse.md)
- - [Model.NFTTransaction](docs/NFTTransaction.md)
+ - [Model.NearPublicKey](docs/NearPublicKey.md)
  - [Model.ParameterSpecification](docs/ParameterSpecification.md)
  - [Model.PrivateKey](docs/PrivateKey.md)
  - [Model.Project](docs/Project.md)
@@ -342,14 +372,20 @@ Class | Method | HTTP request | Description
  - [Model.PublicKey](docs/PublicKey.md)
  - [Model.SecretPhrase](docs/SecretPhrase.md)
  - [Model.SecretRecoveryPhrase](docs/SecretRecoveryPhrase.md)
+ - [Model.SolanaPublicKey](docs/SolanaPublicKey.md)
+ - [Model.SolanaTransaction](docs/SolanaTransaction.md)
+ - [Model.SolanaTransactionCompiledResponse](docs/SolanaTransactionCompiledResponse.md)
+ - [Model.SolanaTransactionMadeResponse](docs/SolanaTransactionMadeResponse.md)
  - [Model.StatItem](docs/StatItem.md)
+ - [Model.SupplyWalletRequest](docs/SupplyWalletRequest.md)
+ - [Model.TokenMetadataResponse](docs/TokenMetadataResponse.md)
  - [Model.Transaction](docs/Transaction.md)
  - [Model.TransactionResult](docs/TransactionResult.md)
  - [Model.TransferRequest](docs/TransferRequest.md)
  - [Model.TransferResponse](docs/TransferResponse.md)
  - [Model.TransferResponseCompiled](docs/TransferResponseCompiled.md)
- - [Model.UploadFileRequest](docs/UploadFileRequest.md)
  - [Model.Wallet](docs/Wallet.md)
+ - [Model.WalletIdentifiers](docs/WalletIdentifiers.md)
 
 
 ## Documentation for Authorization
